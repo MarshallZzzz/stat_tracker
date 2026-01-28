@@ -47,11 +47,11 @@ class _ScoreboardViewState extends State<ScoreboardView> {
           backgroundColor: Colors.transparent,
           elevation: 0,
         ),
-        body: Center(
+        body: SafeArea(
           child: Padding(
             padding: const EdgeInsets.all(16.0), // 5. Use const for performance
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 
                 Row(
@@ -71,6 +71,7 @@ class _ScoreboardViewState extends State<ScoreboardView> {
                     ),
                   ],
                 ),
+                const SizedBox(height: 40),
                 Container(
                   padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
                   decoration: BoxDecoration(
