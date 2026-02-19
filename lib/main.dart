@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:stat_tracker/Components/ScoreboardView.dart';
+import 'package:stat_tracker/Components/scoreboard.dart';
+import 'package:stat_tracker/Views/match_setup_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -31,7 +32,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         scaffoldBackgroundColor: Colors.transparent,
       ),
-      home: ScoreboardView(currPlayer: "Marshall", oppPlayer: "Adela"),
+      home: MatchSetupView(),
     );
   }
 }
